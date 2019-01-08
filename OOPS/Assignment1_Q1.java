@@ -5,7 +5,8 @@ class Student_Details{
 	int cgpa;
 	int percentage;
 	int Percentage(){
-	    return (cgpa * 9);
+	    percentage = (int) (cgpa * 9.5);
+	    return percentage;
 	}
 }
 public class Assignment1_Q1{
