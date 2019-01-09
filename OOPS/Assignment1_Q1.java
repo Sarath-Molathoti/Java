@@ -1,11 +1,12 @@
 import java.util.Scanner;
+import java.lang.Math; 
 class Student_Details{
 	String Name;
 	String Roll_No;
 	int cgpa;
 	int percentage;
 	int Percentage(){
-	    percentage = (int) (cgpa * 9.5);
+	    percentage = (int) (Math.ceil(cgpa * 9.285));
 	    return percentage;
 	}
 }
