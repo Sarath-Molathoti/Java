@@ -1,20 +1,18 @@
 import java.util.Scanner;
-class shape{
+abstract class shape{
 	String Shape;
-	public void area(){
-	     return ;
-	}
+	public abstract void area();
 }
 class rectangle extends shape{
 	int length,breadth;
-	@Override
+	//@Override
 	public void area(){
 	     System.out.println("Area of rectangle\n" + (length * breadth));
 	}
 }
 class circle extends shape{
 	int radius,area;
-	@Override
+	//@Override
 	public void area(){
 	     area = (int) (3.14f * radius * radius);
 	     System.out.println("Area of circle\n" + area);
